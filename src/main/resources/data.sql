@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS accounts;
+
+CREATE TABLE accounts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    uuid VARCHAR(250) NOT NULL
+);
