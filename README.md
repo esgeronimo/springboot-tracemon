@@ -5,8 +5,8 @@ Usage of AbstractMonitoringInterceptor and AOP for determining duration of repos
 The `org.springframework.aop.interceptor.AbstractMonitoringInterceptor` class is an implementation of `org.springframework.aop.Advise` that can be used to intercept method calls for monitoring purposes.
 
 We created an implementation of the interceptor, `GenericPerformanceMonitorInterceptor`, that is used in creating instances of `org.springframework.aop.Advisor` associated with the following:
-* Database queries - involves repository classes which by convention should be any file under `esgeronimo.github.springboottracemon.infra.repository` with suffix `Repository`. See `esgeronimo.github.springboottracemon.infra.trace.ClientPerformanceMonitoringConfig`
-* API calls - involves client classes which by convention should be any files under OR inherits files under `esgeronimo.github.springboottracemon.client`. See ` `esgeronimo.github.springboottracemon.infra.trace.
+* Database queries - involves repository classes which by convention should be any file under `esgeronimo.github.springboottracemon.infra.repository` with suffix `Repository`. See `esgeronimo.github.springboottracemon.infra.trace.DataSourcePerformanceMonitoringConfig`
+* API calls - involves client classes which by convention should be any files under OR inherits files under `esgeronimo.github.springboottracemon.client`. See `esgeronimo.github.springboottracemon.infra.trace.ClientPerformanceMonitoringConfig`.
 
 ## Usage
 Run the application:
